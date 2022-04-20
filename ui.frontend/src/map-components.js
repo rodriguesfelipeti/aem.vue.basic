@@ -9,6 +9,10 @@ import {
   AllowedComponentsContainer,
   MapTo
 } from '@mavice/aem-vue-editable-components'
+import ErrorHeader from './components/ErrorHeader/ErrorHeader'
+import TextInput from './components/TextInput/TextInput'
+import CustomButton from './components/CustomButton/CustomButton'
+import ErrorFooter from './components/ErrorFooter/ErrorFooter'
 
 MapTo('vue/components/page')(withComponentMappingContext(AppPage))
 
@@ -23,6 +27,14 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
+
+MapTo('vue/components/error-footer')(ErrorFooter)
+
+MapTo('vue/components/custom-button')(CustomButton)
+
+MapTo('vue/components/text-inpt')(TextInput)
+
+MapTo('vue/components/error-header')(ErrorHeader)
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
 
