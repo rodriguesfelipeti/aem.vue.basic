@@ -13,7 +13,12 @@ import ErrorHeader from './components/ErrorHeader/ErrorHeader'
 import Text2 from './components/Text2/Text2'
 import CustomButton from './components/CustomButton/CustomButton'
 import ErrorFooter from './components/ErrorFooter/ErrorFooter'
-import TextInput from './components/TextInput/TextInput'
+import TextInput2 from './components/TextInput2/TextInput2'
+import Button from './components/Button/Button'
+
+import FormLogin from './components/Login/FormLogin/FormLogin'
+import LoginTexts from './components/Login/LoginTexts/LoginTexts'
+import LoginLogo from './components/Login/LoginLogo/LoginLogo'
 
 MapTo('vue/components/page')(withComponentMappingContext(AppPage))
 
@@ -29,7 +34,11 @@ const EditConfig = {
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
 
-MapTo('vue/components/text-input')(TextInput)
+MapTo('vue/components/form-login')(FormLogin)
+
+MapTo('vue/components/button')(Button)
+
+MapTo('vue/components/text-input2')(TextInput2)
 
 MapTo('vue/components/error-footer')(ErrorFooter)
 
@@ -76,3 +85,8 @@ MapTo('vue/components/container')(
     }
   }
 )
+
+// Login
+
+MapTo('vue/components/login-texts')(LoginTexts, EditConfig)
+MapTo('vue/components/login-logo')(LoginLogo, EditConfig)

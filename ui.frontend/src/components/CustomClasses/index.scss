@@ -178,4 +178,28 @@
 
     }
 
+
+    // LOGIN PAGE new
+
+
+  .bg-login-new__bg-background-image {
+
+    background-image: url('/content/dam/vue/bg_login1.png');
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+    .bg-login-new__bg-background-image {
+      display: flex;
+    }
+
+  }
+
   

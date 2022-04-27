@@ -1,0 +1,19 @@
+.logo-left {
+    display: none;
+}
+
+.logo-right {
+    display: flex;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .logo-left {
+        display: flex;
+        margin-top: 2.18rem;
+    }
+
+    .logo-right {
+        display: none;
+    }
+}

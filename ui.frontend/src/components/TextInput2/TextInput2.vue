@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: 'TextInput',
+  name: 'TextInput2',
   props: {
     text: {
       type: String
@@ -17,7 +17,7 @@ export default {
 }
 </script>
 <style lang="scss">
-
+@import "./TextInput2.scss";
      @font-face {
       font-family: 'Questrial';
       font-style: normal;

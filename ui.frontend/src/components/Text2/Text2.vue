@@ -117,43 +117,43 @@ export default {
 
   @media only screen and (max-width: 600px) {
 
-        .inptTxt-title {
-          position: absolute;
-          width: 350px;
-          height: 142px;
-          left: 24px;
-          top: 407px;
+      .inptTxt-title {
+        position: absolute;
+        width: 350px;
+        height: 142px;
+        left: 24px;
+        top: 407px;
 
-          font-family: 'Space Mono';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 48px;
-          line-height: 71px;
-          letter-spacing: -0.035em;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -0.035em;
 
-          /* Gray 1 */
+        /* Gray 1 */
 
-          color: #333333;
-        }
+        color: #333333;
+      }
 
-        .inptTxt-txt {
-          position: absolute;
-          width: 328px;
-          height: 81px;
-          left: 23px;
-          top: 579px;
+      .inptTxt-txt {
+        position: absolute;
+        width: 328px;
+        height: 81px;
+        left: 23px;
+        top: 579px;
 
-          font-family: 'Space Mono';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 27px;
-          letter-spacing: -0.035em;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.035em;
 
-          /* Gray 2 */
+        /* Gray 2 */
 
-          color: #4F4F4F;
-        }
-    }
+        color: #4F4F4F;
+      }
+  }
 
 </style>
