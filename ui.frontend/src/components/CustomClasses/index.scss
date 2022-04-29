@@ -211,3 +211,9 @@
     background-repeat: no-repeat;
     margin-top: 15.3rem;
   }
+
+  //Header Home
+  .header-home__display--flex {
+    display: flex;
+    justify-content: space-between;
+  }

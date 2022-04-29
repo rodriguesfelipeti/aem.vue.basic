@@ -32,6 +32,12 @@ export default {
     if (homeBgImage) {
       homeBgImage.classList.add('bg-home__bg-background-image')
     }
+
+    // display flex header home
+    const headerHomeCntr = document.querySelector('[cqpath="/content/vue/vue/Home/jcr:content/root/responsivegrid/container"] div')
+    if (headerHomeCntr) {
+      headerHomeCntr.classList.add('header-home__display--flex')
+    }
   }
 }
 

@@ -22,6 +22,9 @@ import LoginLogo from './components/Login/LoginLogo/LoginLogo'
 import HomeHeader from './components/Home/HeaderHome/HeaderHome'
 import HomeLogo from './components/Home/HomeLogo/HomeLogo'
 import HomeDescription from './components/Home/HomeDescription/HomeDescription'
+import HomeWeather from './components/Home/HomeWeather/HomeWeather'
+import HomeDayInfo from './components/Home/HomeDayInfo/HomeDayInfo'
+import HomeFooterBar from './components/Home/HomeFooterBar/HomeFooterBar'
 
 MapTo('vue/components/page')(withComponentMappingContext(AppPage))
 
@@ -96,3 +99,6 @@ MapTo('vue/components/login-logo')(LoginLogo, EditConfig)
 MapTo('vue/components/home-header')(HomeHeader, EditConfig)
 MapTo('vue/components/home-logo')(HomeLogo, EditConfig)
 MapTo('vue/components/home-description')(HomeDescription, EditConfig)
+MapTo('vue/components/home-weather')(HomeWeather, EditConfig)
+MapTo('vue/components/home-day-info')(HomeDayInfo, EditConfig)
+MapTo('vue/components/home-footer-bar')(HomeFooterBar, EditConfig)

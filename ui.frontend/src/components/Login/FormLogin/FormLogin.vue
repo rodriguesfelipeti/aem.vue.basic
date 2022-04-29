@@ -26,6 +26,7 @@
 
 import { mapActions, mapGetters } from 'vuex'
 import { authService } from '../../../service/authService'
+import { weatherService } from '../../../service/weatherService'
 
 export default {
   name: 'FormLogin',
@@ -125,6 +126,10 @@ export default {
   mounted () {
     console.log('Status de acesso: ')
     console.log(this.logged)
+
+    weatherService.getWeather('Limeira').then(res => {
+      console.log(res)
+    })
   }
 }
 </script>
