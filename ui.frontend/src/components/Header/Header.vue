@@ -1,7 +1,5 @@
 <template>
-  <header>
-    <h1>OLÁ, SOU UM HEADER</h1>
-    <p>SOU O TEXTO DO HEADER</p>
+  <header class="header">
   </header>
 </template>
 
@@ -14,10 +12,4 @@ export default {
 </script>
 
 <style scoped>
-header {
-  background-color: #eee;
-}
-h1 {
-  color: red;
-}
 </style>

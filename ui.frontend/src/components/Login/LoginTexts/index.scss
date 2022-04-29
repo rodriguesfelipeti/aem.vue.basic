@@ -3,9 +3,8 @@
     font-weight: 400;
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 12.3rem;
-    // margin-left: 17.9rem;
+    margin-left: 17.9rem;
 
     &__article {
         max-width: 301px;
@@ -20,16 +19,47 @@
     }
 
     &__text {
+        margin: 1.06rem;
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.25rem;
     }
-}
 
-@media only screen and (min-width: 1024px) {
+    @media only screen and (max-width: 1024px) {
 
-    .login-texts {
-        margin-top: 12.3rem;
-        // margin-left: 17.9rem;
+        margin-top: 76px;
+        margin-left: 108px;
+    
+        &__header {
+            width: 118px;
+            height: 76px;
+        }
+    
+        &__text {
+            min-width: 301px;
+            height: 52px;
+            margin-top: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        margin-top: 57px;
+        margin-left: 81px;
+    
+        &__header {
+            width: 88.5px;
+            height: 57px;
+            font-size: 45px;
+            line-height: 57px;
+        }
+    
+        &__text {
+            min-width: 225.7px;
+            height: 39px;
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
 }
+

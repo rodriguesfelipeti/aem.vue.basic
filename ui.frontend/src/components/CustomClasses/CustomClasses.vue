@@ -26,6 +26,12 @@ export default {
     if (loginImgContainerNew) {
       loginImgContainerNew.classList.add('bg-login-new__bg-background-image')
     }
+
+    // home background image
+    const homeBgImage = document.querySelector('[cqpath="/content/vue/vue/Home/jcr:content/root/responsivegrid/container_379183683"] div')
+    if (homeBgImage) {
+      homeBgImage.classList.add('bg-home__bg-background-image')
+    }
   }
 }
 

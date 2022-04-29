@@ -19,6 +19,9 @@ import Button from './components/Button/Button'
 import FormLogin from './components/Login/FormLogin/FormLogin'
 import LoginTexts from './components/Login/LoginTexts/LoginTexts'
 import LoginLogo from './components/Login/LoginLogo/LoginLogo'
+import HomeHeader from './components/Home/HeaderHome/HeaderHome'
+import HomeLogo from './components/Home/HomeLogo/HomeLogo'
+import HomeDescription from './components/Home/HomeDescription/HomeDescription'
 
 MapTo('vue/components/page')(withComponentMappingContext(AppPage))
 
@@ -33,8 +36,6 @@ const EditConfig = {
 /** *******************************************************************
               ↓  NEW COMPONENTS MAPPING COME HERE  ↓
 **********************************************************************/
-
-MapTo('vue/components/form-login')(FormLogin)
 
 MapTo('vue/components/button')(Button)
 
@@ -87,6 +88,11 @@ MapTo('vue/components/container')(
 )
 
 // Login
-
+MapTo('vue/components/form-login')(FormLogin)
 MapTo('vue/components/login-texts')(LoginTexts, EditConfig)
 MapTo('vue/components/login-logo')(LoginLogo, EditConfig)
+
+// Home
+MapTo('vue/components/home-header')(HomeHeader, EditConfig)
+MapTo('vue/components/home-logo')(HomeLogo, EditConfig)
+MapTo('vue/components/home-description')(HomeDescription, EditConfig)

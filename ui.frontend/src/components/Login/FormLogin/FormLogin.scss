@@ -4,4 +4,209 @@
     flex-direction: column;
     margin-left: 17.9rem;
     margin-top: 8.4rem;
+    font-family: 'Questrial';
+    font-weight: 400;
+    color: #E0E0E0;
+    
+
+    &__legend{
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__p {
+       
+        input {
+            width: 23.6rem;
+            height: 3.75rem;
+            border-radius: 50px;
+            box-sizing: border-box;
+            border: 1px solid #FFFFFF;
+            background: #26292C;
+            font-family: 'Questrial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            padding-left: 1.5rem;
+            color: #E0E0E0;
+            margin-bottom: 32px;
+
+            &#txt-user {
+                background: url('/content/dam/vue/user-logo.png') no-repeat 95%;
+                background-size: 15px;
+            }
+
+            &#txt-pass {
+                background: url('/content/dam/vue/pass-logo.png') no-repeat 95%;
+                background-size: 15px;
+            }
+
+            &.--error {
+                border: 1px solid #e9b425;
+            }
+        }
+
+        ::placeholder {
+            font-family: 'Questrial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: #E0E0E0;
+            position: absolute;
+            left: 1.87rem;
+            top: 1.12rem;
+
+        }
+
+        p {
+            margin: 0 1.5rem;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            color: #e9b425;
+            padding-left: 1.5rem;
+            width: 17.6rem;
+            text-align: center;
+        }
+
+
+
+    }
+
+    &__button {
+        Button {
+            margin: 5rem 0;
+            max-width: 379px;
+            width: 100%;
+            height: 67px;
+            background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
+            box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 1.438rem;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover {
+                background: #c13216;
+                border: #c13216;
+            }
+
+            &:active {
+                transform: translateY(1px);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+        margin-left: 6.87rem;
+        margin-top: 4.75rem;
+    
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        margin-left: 5.15rem;
+        margin-top: 3.56rem;
+
+        &__legend{
+            font-size: 1.35rem;
+            line-height: 1.72rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__p {
+       
+            input {
+                width: 17.67rem;
+                height: 2.81rem;
+                border-radius: 50px;
+                box-sizing: border-box;
+                border: 1px solid #FFFFFF;
+                background: #26292C;
+                font-family: 'Questrial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height:15px;
+                padding-left: 1.5rem;
+                color: #E0E0E0;
+                margin-bottom: 1.5rem;
+    
+                &#txt-user {
+                    background: url('/content/dam/vue/user-logo.png') no-repeat 95%;
+                    background-size: 11.25px;
+                }
+    
+                &#txt-pass {
+                    background: url('/content/dam/vue/pass-logo.png') no-repeat 95%;
+                    background-size: 11.25px;
+                }
+    
+                &.--error {
+                    border: 1px solid #e9b425;
+                }
+            }
+    
+            ::placeholder {
+                font-family: 'Questrial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 15px;
+                color: #E0E0E0;
+                position: absolute;
+                left: 1.40rem;
+                top: 13,4px;
+    
+            }
+    
+            p {
+                margin: 0 1.12rem;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: #e9b425;
+                padding-left: 1.12rem;
+                width: 13.17rem;
+                text-align: center;
+            }
+    
+    
+    
+        }
+    
+        &__button {
+            Button {
+                margin: 3.75rem 0;
+                max-width: 17.76rem;
+                width: 100%;
+                height: 3.14rem;
+                background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
+                box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+                border: none;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 13,5px;
+                line-height: 1.07rem;
+                color: #ffffff;
+                cursor: pointer;
+    
+                &:hover {
+                    background: #c13216;
+                    border: #c13216;
+                }
+    
+                &:active {
+                    transform: translateY(1px);
+                }
+            }
+        }
+    }
 }
