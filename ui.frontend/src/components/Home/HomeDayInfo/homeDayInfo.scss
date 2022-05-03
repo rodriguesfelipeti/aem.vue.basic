@@ -15,10 +15,14 @@
     font-style: normal;
     color: #222222;
 
+
+
+
     &__title {
         margin: 0;
         margin-top: 53px;
         text-align: center;
+        letter-spacing: -31px;
         
     }
 
@@ -32,5 +36,9 @@
         font-style: normal;
         text-align: center;
  
+    }
+
+    @media only screen and (max-width: 1024px) {
+        display: none;
     }
 }

@@ -13,7 +13,7 @@
 </template>
 <script>
 
-import { mapActions, mapGetters } from 'vuex'
+import { mapGetters } from 'vuex'
 import { weatherService } from '../../../service/weatherService'
 import getStateAbb from '../../../enum/statesBr'
 
@@ -38,15 +38,11 @@ export default {
     },
 
     castTemperature (temperature) {
-      console.log(temperature.toString())
       return temperature.toString().substr(0, 4)
     }
 
   },
   mounted () {
-    console.log('Usuário Logado: ')
-    console.log(this.logged.loggedUser)
-
     navigator.geolocation.getCurrentPosition(
       position => {
         weatherService.getStreetAddressFrom(position.coords.latitude, position.coords.longitude)

@@ -11,21 +11,38 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <!-- <headerTitle
+                    <formTitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Título"
-                        name="./headerTitle"/>
-                    <text
+                        name="./formTitle"/>
+                    <userText
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Texto"
-                        name="./text"/> -->
-                    <!-- <className
+                        name="./userText"/>
+                    <userText
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Classe CSS"
-                        name="./className"/> -->
+                        fieldLabel="Título Input 1"
+                        name="./userText"/>
+                    <userPass
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Título Input 2"
+                        name="./userPass"/>
+                    <btnValue
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Texto Botão"
+                        name="./btnValue"/>
+                    <urlRouter
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                        cq-msm-lockable="./urlRouter"
+                        fieldLabel="URL"
+                        name="./urlRouter"
+                        rootPath="/content"/>
                 </items>
             </column>
         </items>

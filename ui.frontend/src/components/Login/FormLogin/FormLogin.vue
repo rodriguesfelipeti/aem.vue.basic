@@ -54,6 +54,10 @@ export default {
     srcLogo: {
       type: String,
       default: '/content/dam/vue/pass-logo.png'
+    },
+    urlRouter: {
+      type: String,
+      default: 'Login'
     }
   },
   data () {
@@ -92,6 +96,9 @@ export default {
         } else {
           this.setLogged(this.userData)
           console.log(this.logged)
+
+          // this.$router.push(`${this.urlRouter}`)
+          window.location.pathname = `${this.urlRouter}.html`
         }
       }
     },

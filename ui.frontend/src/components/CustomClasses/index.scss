@@ -205,15 +205,27 @@
   // HOME background image
 
   .bg-home__bg-background-image {
-    background-image: url('/content/dam/vue/home/bola-LogoCompasso.png');
+    background-image: url('/content/dam/vue/home/uol-ball-transparent%20.png');
     justify-content: center;
-    height: 51.5rem;
+    height: 556px;
     background-repeat: no-repeat;
-    margin-top: 15.3rem;
+    margin-top: 151px;
+    width: 44rem;
+    background-size: 100%;
+
+    @media only screen and (max-width: 1024px) {
+      background-image: url('/content/dam/vue/home/uol-ball-transparent-mobile.png');
+      background-size: 100%;
+      width: 27rem;
+    }
   }
 
   //Header Home
   .header-home__display--flex {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 1024px) {
+      justify-content: space-around;
+    }
   }

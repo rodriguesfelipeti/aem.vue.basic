@@ -7,10 +7,11 @@
   }
 
 .home-footer-bar {
+    
     display: flex;
     flex-direction:  row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
     height: 100px;
     color: #FFFFFF;
@@ -26,7 +27,7 @@
             margin: 0;
             margin-top: 31px;
             text-align: center;
-            font-family: 'Questrial';
+            font-family: 'Poppins';
             font-weight: 400;
             line-height: 15.21px;
             font-size: 12px;
@@ -62,12 +63,13 @@
             box-sizing: border-box;
             border: 1px solid #FFFFFF;
             background: #26292C;
-            font-family: 'Questrial';
+            font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
             color: #E0E0E0;
             margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
 
             &#txt-user {
                 background: url('/content/dam/vue/user-logo.png') no-repeat 95%;
@@ -80,28 +82,26 @@
         }
 
         ::placeholder {
-            font-family: 'Questrial';
+            font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
-            font-size: 1rem;
-            line-height: 15px;
-            color: #E0E0E0;
-            position: absolute;
-            left: 1.40rem;
-            top: 13,4px;
+            font-size: 14px;
+            line-height: 16px;
+            color:  #FFFFFF;
+            text-align: center;
+            align-items: center;
 
         }
 
         p {
-            margin: 0 1.12rem;
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 15px;
-            color: #e9b425;
-            padding-left: 1.12rem;
-
-            width: 13.17rem;
-            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            padding-left: 1.5rem;
+            color: #E0E0E0;
+            margin-bottom: 32px;
         }
 
         div {
@@ -118,11 +118,13 @@
     &__refreshText {
         width: 109px;
         max-width: 109px;
+        margin: 0;
         margin-top: 25px;
         line-height: 17.75px;
 
         p {
-            font-family: 'Questrial';
+            margin: 0;
+            font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -131,13 +133,15 @@
     }
 
     &__refreshCount {
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 100%;
         
         &--number {
-            font-family: 'Roboto';
+            margin: 0;
+            font-family: 'Poppins';
             font-weight: 400;
             font-size: 48px;
             line-height: 56.25px;
@@ -146,11 +150,81 @@
         }
 
         &--text {
+            margin: 0;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 18px;
+            text-align: center;
         }
+    }
+
+    &__continue {
+        margin: 0;
+        width: 113px;
+        display: flex;
+        background: #FFFFFF;
+        cursor: pointer;
+
+        p {
+            text-align: center;
+            margin-top: 36px;
+            color: #C13216;
+            font-family: 'Poppins';
+            font-size: 12px;
+            line-height: 18px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    &__logout {
+        
+        margin: 0;
+        max-width: 113px;
+        cursor: pointer;
+        p {
+            margin: 0;
+            margin-top: 43px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+       &__info, &__search, &__refreshText,
+       &__refreshCount {
+           display: none;
+       }
+
+       flex-direction: row-reverse;
+       justify-content: space-between;
+
+       &__continue {
+           min-width: 350px;
+           justify-content: center;
+
+           p {
+               width: 100%;
+               height: 100%;
+           }
+       }
+
+       &__logout {
+           min-width: 129px;
+           justify-content: center;
+           
+           p {
+               justify-content: center;
+           }
+       }
+
     }
 
 

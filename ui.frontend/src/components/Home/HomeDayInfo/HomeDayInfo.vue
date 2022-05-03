@@ -5,6 +5,9 @@
     </div>
 </template>
 <script>
+
+import dateTimeHelper from '../../../utils/dateTimeHelper'
+
 export default {
   name: 'HomeDayInfo',
   props: {},
@@ -14,31 +17,12 @@ export default {
       completeDate: ''
     }
   },
-  methods: {
-    getCompleteDate () {
-      const params = {
-        weekday: 'long',
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric'
-      }
-
-      const date = new Date()
-      let seconds
-      console.log(date.getSeconds())
-      if (date.getSeconds() < 10) {
-        seconds = `0${date.getSeconds()}`
-      } else {
-        seconds = date.getSeconds()
-      }
-
-      this.actualTime = `${date.getHours()}:${date.getMinutes()}:${seconds}`
-      this.completeDate = date.toLocaleString('pt-BR', params)
-    }
-  },
+  methods: {},
   mounted () {
     setInterval(() => {
-      this.getCompleteDate()
+      const dateTime = dateTimeHelper.getCompleteDate()
+      this.actualTime = dateTime.actualTime
+      this.completeDate = dateTime.completeDate
     }, '1000')
   }
 }
