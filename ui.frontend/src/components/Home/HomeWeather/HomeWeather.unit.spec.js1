@@ -1,0 +1,16 @@
+/* eslint no-use-before-define: 0 */ // --> OFF
+import { mount } from '@vue/test-utils'
+import HomeWeather from './HomeWeather.vue'
+
+describe('Home - Header - unit', () => {
+  const mountHomeWeather = () => {
+    const wrapper = mount(HomeWeather)
+
+    return wrapper
+  }
+
+  it('should mount component', () => {
+    const wrapper = mountHomeWeather()
+    expect(wrapper.vm).toBeTruthy()
+  })
+})

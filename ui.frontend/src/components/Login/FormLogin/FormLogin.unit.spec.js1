@@ -1,0 +1,17 @@
+/* eslint no-use-before-define: 0 */ // --> OFF
+import { mount } from '@vue/test-utils'
+import FormLogin from './FormLogin.vue'
+import * as store from '@/store/'
+
+describe('Login FormLogin - unit', () => {
+  const mountFormLogin = () => {
+    const wrapper = shallowMount(FormLogin)
+
+    return wrapper
+  }
+
+  it('should mount component', () => {
+    const wrapper = mountFormLogin()
+    expect(wrapper.vm).toBeTruthy()
+  })
+})

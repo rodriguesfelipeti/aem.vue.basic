@@ -95,7 +95,7 @@ export default {
           this.setErrorDataAction(this.errorDataObj(true, true, authUser.msg))
         } else {
           this.setLogged(this.userData)
-          console.log(this.logged)
+          // console.log(this.logged)
 
           // this.$router.push(`${this.urlRouter}`)
           window.location.pathname = `${this.urlRouter}.html`
@@ -131,15 +131,16 @@ export default {
     }
   },
   mounted () {
-    console.log('Status de acesso: ')
-    console.log(this.logged)
+    // console.log('Status de acesso: ')
+    // console.log(this.logged)
 
     weatherService.getWeather('Limeira').then(res => {
-      console.log(res)
+      // console.log(res)
     })
   }
 }
 </script>
+
 <style lang="scss">
   @import "./FormLogin.scss";
 </style>

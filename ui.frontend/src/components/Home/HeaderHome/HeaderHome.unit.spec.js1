@@ -1,0 +1,16 @@
+/* eslint no-use-before-define: 0 */ // --> OFF
+import { mount } from '@vue/test-utils'
+import HeaderHome from './HeaderHome.vue'
+
+describe('Home - Header - unit', () => {
+  const mountHeaderHome = () => {
+    const wrapper = mount(HeaderHome)
+
+    return wrapper
+  }
+
+  it('should mount component', () => {
+    const wrapper = mountHeaderHome()
+    expect(wrapper.vm).toBeTruthy()
+  })
+})

@@ -1,0 +1,16 @@
+/* eslint no-use-before-define: 0 */ // --> OFF
+import { mount } from '@vue/test-utils'
+import HomeFooterBar from './HomeFooterBar.vue'
+
+describe('Home - Header - unit', () => {
+  const mountHomeFooterBar = () => {
+    const wrapper = mount(HomeFooterBar)
+
+    return wrapper
+  }
+
+  it('should mount component', () => {
+    const wrapper = mountHomeFooterBar()
+    expect(wrapper.vm).toBeTruthy()
+  })
+})
